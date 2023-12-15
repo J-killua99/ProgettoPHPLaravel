@@ -28,7 +28,11 @@
             <li><a class="dropdown-item" href="#">Mobile</a></li>
           </ul>
         </li>
-        
+       
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('games.create')}}">Crea Gioco</a>
+        </li>
+       
         @guest
         <li class="nav-item">
           <a class="nav-link" href="/register">Registrati</a>
@@ -36,6 +40,7 @@
         <li class="nav-item">
           <a class="nav-link" href="/login">Login</a>
         </li>
+       
         
         @else
         <li class="nav-item dropdown">
